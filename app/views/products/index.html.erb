@@ -15,7 +15,7 @@ $(function () {
       $("#description-" + id).text(data);
     });
     $.get("/products/" + id + "/inventory", function(data) {
-      if (data == true) {
+      if (data == "true") {
         var boolean = "Available"
         $("#inventory-" + id).text(boolean)
       } else {
